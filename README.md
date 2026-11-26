@@ -67,7 +67,7 @@ Requires Python 3.10+. Zero third-party dependencies — the standard library is
 the whole stack.
 
 ```bash
-git clone https://github.com/CYPHERLYNX/whitespace
+git clone https://github.com/X0D4N/whitespace
 cd whitespace
 python -m venv .venv && source .venv/bin/activate
 pip install -e .

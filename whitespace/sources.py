@@ -13,7 +13,7 @@ import json
 import urllib.error
 import urllib.request
 
-USER_AGENT = "whitespace-ai/0.1.0 (+https://github.com/CYPHERLYNX/whitespace)"
+USER_AGENT = "whitespace-ai/0.1.0 (+https://github.com/X0D4N/whitespace)"
 
 
 class SourceUnavailable(Exception):

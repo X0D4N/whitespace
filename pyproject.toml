@@ -9,7 +9,7 @@ description = "Find the whitespace in the AI tool market: trend radar + automate
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "CYPHERLYNX" }]
+authors = [{ name = "X0D4N" }]
 keywords = ["ai", "developer-tools", "trend-analysis", "novelty", "indie-hacker"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -24,8 +24,8 @@ classifiers = [
 whitespace = "whitespace.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/CYPHERLYNX/whitespace"
-Issues = "https://github.com/CYPHERLYNX/whitespace/issues"
+Homepage = "https://github.com/X0D4N/whitespace"
+Issues = "https://github.com/X0D4N/whitespace/issues"
 
 [tool.setuptools.packages.find]
 include = ["whitespace*"]
