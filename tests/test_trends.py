@@ -1,5 +1,6 @@
 """Trend-radar tests with mocked HTTP (no network)."""
 
+import datetime as dt
 import unittest
 from unittest.mock import patch
 
@@ -44,9 +45,16 @@ HN_FIXTURE = {
     ]
 }
 
-PH_FIXTURE = """
-| `26-09-15` | [VoicePilot](https://www.producthunt.com/posts/voicepilot) | AI voice agents for sales calls |
-| `26-09-10` | [BreadCalc](https://www.producthunt.com/posts/breadcalc) | sourdough hydration math |
+_TODAY = dt.date.today()
+
+
+def _ph_date(days_ago):
+    return (_TODAY - dt.timedelta(days=days_ago)).strftime("%y-%m-%d")
+
+
+PH_FIXTURE = f"""
+| `{_ph_date(5)}` | [VoicePilot](https://www.producthunt.com/posts/voicepilot) | AI voice agents for sales calls |
+| `{_ph_date(10)}` | [BreadCalc](https://www.producthunt.com/posts/breadcalc) | sourdough hydration math |
 | `25-01-01` | [OldTool](https://www.producthunt.com/posts/oldtool) | AI chatbot from last year |
 """
 
