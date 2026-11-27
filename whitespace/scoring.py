@@ -96,7 +96,7 @@ def rank(idea: str, candidates: list[dict]) -> list[tuple[dict, float]]:
     idf = _idf(docs)
     idea_vec = _vector(docs[0], idf)
     scored = []
-    for cand, toks in zip(candidates, docs[1:]):
+    for cand, toks in zip(candidates, docs[1:], strict=True):
         scored.append((cand, cosine(idea_vec, _vector(toks, idf))))
     scored.sort(key=lambda p: p[1], reverse=True)
     return scored
